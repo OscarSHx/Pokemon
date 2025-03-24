@@ -38,7 +38,7 @@ class PokemonListCtrl extends GetxController {
       pagePokemonList++;
       offsetPokemonList = limitPerList*pagePokemonList;
       for (var i = 0; i < limitPerList; i++) {
-        pokemonesView.add(pokemones[offsetPokemonList]);
+        pokemonesView.add(pokemones[pokemonesView.length]);
       }
       loadingMorePokemon = false;
       update(["body_pokemon_list"]);
