@@ -307,7 +307,7 @@ class DetailPokemonPage extends StatelessWidget {
           style: TextStyle(
             fontSize: 14,
             fontWeight: FontWeight.w700,
-            color: getColorTypePokemon[gx.pokemonDetailModel.types.first.type.name]
+            color: getColorTypePokemon[gx.pokemonDetailModel.types.first.type.name] ?? appBarHomeColor
           )
         );
       }
